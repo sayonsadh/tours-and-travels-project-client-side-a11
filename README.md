@@ -1,4 +1,4 @@
-sir i cant remove firebase config file. i try to make environment file but i cant do this, i try more than 15 times, i go support session they try it but, we cant find any reason, why environment file is not working. so i push my code in git with firebase config file.
+### sir i cant remove firebase config file. i try to make environment file but i cant do this, i try more than 15 times, i go support session they try it but, we cant find any reason, why environment file is not working. so i push my code in git with firebase config file.
 
 # Sayon Tours & Travels
 
