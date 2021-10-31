@@ -32,7 +32,7 @@ const ManagePackage = () => {
     const update = {
         status:"Approved"
     };
-    //update
+    //update...
     const handleUpdateBtn = id => {
         const uri = `https://frightful-zombie-62130.herokuapp.com/tours/${id}`;
         fetch(uri, {
