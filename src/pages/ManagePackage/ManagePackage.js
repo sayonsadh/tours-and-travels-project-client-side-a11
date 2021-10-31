@@ -42,7 +42,7 @@ const ManagePackage = () => {
                         <h6>Address:- {tour.address}</h6>
                         <h6>Destination:- {tour.destination}</h6>
                         <h6>Travel date:- {tour.date}</h6>
-                        <button className="btn btn-danger mb-2" onClick={() => handleCancelTour(tour._id)}>Cancel Tour</button>
+                        <button className="btn btn-danger mb-2" onClick={() => handleCancelTour(tour._id)}>Cancel {tour.destination} Tour</button>
 
                     </div>
                 )

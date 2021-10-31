@@ -33,6 +33,7 @@ const Booking = () => {
         .then(data => {
             if(data.insertedId){
                 alert('Congratulation, Your package confirm successfully.')
+                e.target.reset();
             }
         })
     }
