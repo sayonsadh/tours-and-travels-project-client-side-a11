@@ -1,0 +1,11 @@
+.notfound-container{
+    background-image: url('https://freefrontend.com/assets/img/html-funny-404-pages/HTML-404-Error-Page.gif');
+    background-size: cover;
+    height: 100vh;
+}
+.home-button{
+    margin-top: 530px;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+}
