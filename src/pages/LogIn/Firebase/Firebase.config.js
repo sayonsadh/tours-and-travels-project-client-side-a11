@@ -1,4 +1,3 @@
-console.log(process.env);
 const firebaseConfig = {
   apiKey: "AIzaSyCgKTh8qS8eyzxkh99GdvRUwKRgbdQ1IDE",
   authDomain: "sayon-tours-and-travels.firebaseapp.com",

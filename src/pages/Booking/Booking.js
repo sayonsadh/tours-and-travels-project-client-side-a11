@@ -19,8 +19,9 @@ const Booking = () => {
         const address = addressRef.current.value;
         const date = dateRef.current.value;
         const destination = destinationRef.current.value;
+        const status = "Pending...";
 
-        const confirmPackage = {name, email, phone, address, date, destination};
+        const confirmPackage = {name, email, phone, address, date, destination, status};
 
         fetch('https://frightful-zombie-62130.herokuapp.com/tours', {
             method: "POST",
@@ -120,15 +121,7 @@ const Booking = () => {
 
                         <input className="btn btn-success" type="submit" value="Confirm This Tour" />
                     </Form>
-                    {/* <form action="">
-                    <input type="text" placeholder="Your name" /><br />
-                    <input type="email" name="" id="" placeholder="Your email" /><br />
-                    <input type="text" placeholder="Your phone Number" /><br />
-                    <input type="text" placeholder="Your address" /><br />
-                    <input className="btn btn-success" type="submit" value="Confirm This Tour" /><br />
-                </form> */}
                 </div>
-
             </div>
         </div>
     );

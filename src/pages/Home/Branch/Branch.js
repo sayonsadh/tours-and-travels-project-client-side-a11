@@ -16,7 +16,7 @@ const Branch = () => {
            <div  className="branch-container">
            {
                 branches.map(branch => 
-                    <div className="border border-info w-75 ms-5 mt-3 mb-3 bg-white rounded-3 p-2">
+                    <div className="border border-info w-75 ms-5 mt-3 mb-3 bg-white rounded-3 p-2" key={branch._id}>
                         <img className="img-fluid" src={branch.image} alt="" />
                         <h4>Branch Name:- {branch.name}</h4>
                         <h4>Address:- {branch.address}</h4>

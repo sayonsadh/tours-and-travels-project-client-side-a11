@@ -31,12 +31,12 @@ function App() {
             <PrivateRoute path="/booking/:place">
             <Booking></Booking>
             </PrivateRoute>
-            <Route path="/mypackages">
+            <PrivateRoute path="/mypackages">
               <MyPackages></MyPackages>
-            </Route>
-            <Route path="/managepackages">
+            </PrivateRoute>
+            <PrivateRoute path="/managepackages">
               <ManagePackage></ManagePackage>
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
               <LogIn></LogIn>
             </Route>

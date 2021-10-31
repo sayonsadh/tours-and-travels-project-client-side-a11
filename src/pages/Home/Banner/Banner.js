@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Banner = () => {
-    console.log(process.env);
     return (
         <div>
             <div className="d-flex justify-content-between mt-5 p-3">

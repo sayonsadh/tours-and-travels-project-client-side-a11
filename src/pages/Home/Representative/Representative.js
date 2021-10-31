@@ -15,7 +15,7 @@ const Representative = () => {
             <div className="worker-container ms-5">
                 {
                     representatives.map(representative => 
-                        <div className="border border-info w-75 m-5 rounded-3 ">
+                        <div className="border border-info w-75 m-5 rounded-3 " key={representative._id}>
                             <img className="img-fluid p-2" src={representative.image} alt="" />
                             <h4>Name:- {representative.name}</h4> 
                             <h5>{representative.work}</h5>
