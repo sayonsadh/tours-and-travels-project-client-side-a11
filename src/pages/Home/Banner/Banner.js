@@ -4,7 +4,7 @@ const Banner = () => {
     console.log(process.env);
     return (
         <div>
-            <div className="d-flex justify-content-between  p-3">
+            <div className="d-flex justify-content-between mt-5 p-3">
                 <h6>WORK HARD</h6>
                 <h6>MAKE MONEY</h6>
                 <h6>VISIT WORLD</h6>

@@ -6,14 +6,14 @@ const MyPackages = () => {
     const [tours, setTours] = useState([]);
 
     useEffect( () => {
-        fetch('http://localhost:9000/tours')
+        fetch('https://frightful-zombie-62130.herokuapp.com/tours')
         .then(res => res.json())
         .then(data => setTours(data))
     }, [])
     
     return ( 
         <div>
-            <h5 className="fst-italic mt-2 p-3">Here Is Your selected Package</h5>
+            <h5 className="fst-italic mt-5 p-3">Here Is Your selected Package</h5>
             <div className="myPackage-container m-5">
             {
                 tours.map(tour =>

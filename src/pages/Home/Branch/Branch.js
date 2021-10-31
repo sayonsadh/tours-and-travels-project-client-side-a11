@@ -5,7 +5,7 @@ const Branch = () => {
     const [branches, setBranches] = useState([]);
 
     useEffect( () => {
-        fetch('http://localhost:9000/branch')
+        fetch('https://frightful-zombie-62130.herokuapp.com/branch')
         .then(res => res.json())
         .then(data => setBranches(data))
     }, []);

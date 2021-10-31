@@ -5,7 +5,7 @@ const Representative = () => {
     const [representatives, setRepresentatives] = useState([]);
 
     useEffect( () => {
-        fetch('http://localhost:9000/representative')
+        fetch('https://frightful-zombie-62130.herokuapp.com/representative')
         .then(res => res.json())
         .then(data => setRepresentatives(data))
     }, []);

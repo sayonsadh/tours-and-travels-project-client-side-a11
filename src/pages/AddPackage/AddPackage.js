@@ -16,7 +16,7 @@ const AddPackage = () => {
 
         const newPackage = { pack, place, price, description, image };
 
-        fetch('http://localhost:9000/packages', {
+        fetch('https://frightful-zombie-62130.herokuapp.com/packages', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -36,7 +36,7 @@ const AddPackage = () => {
     }
     return (
         <div className="">
-            <h5 className='mt-2 p-3 fst-italic'>Please Add Package, Which Package You Need.</h5>
+            <h5 className='mt-5 p-3 fst-italic'>Please Add Package, Which Package You Need.</h5>
             <div className=" addpackage-container">
                 <div className="me-5 ms-5 "> 
                     <img className="img-fluid" src="https://content.presentermedia.com/content/animsp/00007000/7148/airplane_passenger_ride_md_nwm_v2.gif" alt="" />

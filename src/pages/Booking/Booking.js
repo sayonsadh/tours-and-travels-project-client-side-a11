@@ -22,7 +22,7 @@ const Booking = () => {
 
         const confirmPackage = {name, email, phone, address, date, destination};
 
-        fetch('http://localhost:9000/tours', {
+        fetch('https://frightful-zombie-62130.herokuapp.com/tours', {
             method: "POST",
             headers:{
                 "content-type": "application/json"
@@ -42,7 +42,7 @@ const Booking = () => {
     const [packs, setPacks] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:9000/packages')
+        fetch('https://frightful-zombie-62130.herokuapp.com/packages')
             .then(res => res.json())
             .then(data => setPacks(data))
     }, [place]);

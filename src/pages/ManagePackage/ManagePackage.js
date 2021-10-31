@@ -5,7 +5,7 @@ const ManagePackage = () => {
     const [tours, setTours] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:9000/tours')
+        fetch('https://frightful-zombie-62130.herokuapp.com/tours')
             .then(res => res.json())
             .then(data => setTours(data))
     }, []);
@@ -14,7 +14,7 @@ const ManagePackage = () => {
     const handleCancelTour = id => {
         const proceed = window.confirm('Are you sure you want to cancel this tour?');
         if(proceed){
-            const uri = `http://localhost:9000/tours/${id}`;
+            const uri = `https://frightful-zombie-62130.herokuapp.com/tours/${id}`;
             fetch(uri, {
                 method: "DELETE"
             })
@@ -31,7 +31,7 @@ const ManagePackage = () => {
 
     return (
         <div>
-            <h5 className="fst-italic mt-2 p-3">If you want to cancel any tour, you can do this.</h5>
+            <h5 className="fst-italic mt-5 p-3">If you want to cancel any tour, you can do this.</h5>
            <div className="managePackage-container m-5">
            {
                 tours.map(tour =>
