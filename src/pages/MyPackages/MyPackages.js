@@ -23,7 +23,7 @@ const MyPackages = () => {
             <div className="myPackage-container m-5">
                 {
                     tours.map(tour =>
-                        <div className="border border-info w-100 bg-info bg-opacity-25 rounded-3 " key={tour._id}>
+                        <div className=" w-100 bg-info bg-opacity-25 rounded-3 " key={tour._id}>
                             <h2>Congratulation</h2>
                             <h5>Name:- {tour.name}</h5>
                             <h5>Email:- {tour.email}</h5>

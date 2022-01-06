@@ -13,7 +13,7 @@ import MyPackages from './pages/MyPackages/MyPackages';
 import NotFound from './pages/NotFound/NotFound';
 
 function App() {
-  return (
+  return ( 
     <div className="App">
       <AuthProvider>
         <BrowserRouter>

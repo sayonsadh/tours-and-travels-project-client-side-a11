@@ -17,7 +17,7 @@ const ManagePackage = () => {
         if(proceed){
             const uri = `https://frightful-zombie-62130.herokuapp.com/tours/${id}`;
             fetch(uri, {
-                method: "DELETE"
+                method: "DELETE" 
             })
             .then(res => res.json())
             .then(data => {
@@ -57,7 +57,7 @@ const ManagePackage = () => {
            <div className="managePackage-container m-5">
            {
                 tours.map(tour =>
-                    <div className="border border-info w-100  bg-info bg-opacity-25 rounded-3" key={tour._id}>
+                    <div className="border border-info w-100   rounded-3" key={tour._id}>
                         <h5>Name:- {tour.name}</h5>
                         <h5>Email:- {tour.email}</h5>
                         <h6>Phone:- {tour.phone}</h6>

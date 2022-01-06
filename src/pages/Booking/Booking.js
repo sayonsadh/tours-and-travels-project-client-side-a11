@@ -41,7 +41,7 @@ const Booking = () => {
 
     const { place } = useParams();
     const {user} = useAuth();
-    const [packs, setPacks] = useState([]);
+    const [packs, setPacks] = useState([]); 
 
     useEffect(() => {
         fetch('https://frightful-zombie-62130.herokuapp.com/packages')

@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+    box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.123);
 }
 
 @media only screen and (max-width:688px) {
@@ -14,4 +15,8 @@
         grid-template-columns: repeat(2, 1fr);
     }
     
+} 
+.myPackage-container h6{
+    text-align: start;
+    margin-left: 110px;
 }

@@ -21,7 +21,7 @@ const AddPackage = () => {
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(newPackage)
+            body: JSON.stringify(newPackage) 
         })
             .then(res => res.json())
             .then(data => {
